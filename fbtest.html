@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>facebook page plugin test</title>
+
+
+
 </head>
 <header>
 
@@ -10,7 +13,42 @@
 </header>
 
 <body>
+<script>
 
-<!--javascript-->
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchavesgardens&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=415836565427133" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></body>
+FB.init({       
+appId      : '415836565427133',       
+xfbml      : true,       
+version    : 'v2.8'     });     
+FB.AppEvents.logPageView();</script>  
+  
+    
+ <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=415836565427133";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/chavesgardens" data-tabs="timeline" data-width="300" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/chavesgardens" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/chavesgardens">Chaves&#039; Gardens &amp; Florist</a></blockquote></div>
+
+<!--<style type="text/css">
+    .fb_iframe_widget span{        
+        overflow: initial !important;
+    }
+    .fb_iframe_widget iframe{        
+        width: 340px !important;
+        height: 500px !important;    
+    }
+</style>-->
+
+
+
+
+<!--javascript
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
+
+
+</body>
 </html>
